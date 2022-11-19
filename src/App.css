@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.container{
+    margin: auto;
+    padding-top: 30px;
+    width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+    text-align: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: white
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    flex-grow: 1;
+    padding-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-container input{
+    flex-grow: 3;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Rubik';
+    border: 2px solid #d1d3dd;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-container input[type="text"]{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 38px;
+    color: #161717;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-container input:focus{
+    outline: none;
+    border-width: 3px;
+    border-color: #19A68C;
+}
+
+.flex-container button{
+    height: 35px;
+    width: auto;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #19A68C ;
+    color: #ffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Todo-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card-todo{
+    background: #14c97a;
+    padding: 0.5rem;
+    border: 1px solid #808080;
+    border-radius: .35rem;
 }
